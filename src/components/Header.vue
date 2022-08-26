@@ -72,12 +72,22 @@ export default {
 
     padding: 2px;
 
+    cursor: pointer;
+
     border: 1px solid #ccc;
     box-sizing: border-box;
     background-color: #D9D9D9;
 
     background: url("../assets/search-icon.svg") no-repeat center;
     background-size: 18px 18px
+
+}
+
+
+.buttom-search:hover {
+    width: 32px;
+    height: 30px;
+    transition: .5s;
 }
 
 .view-name-product {
