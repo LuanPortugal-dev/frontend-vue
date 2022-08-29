@@ -11,6 +11,7 @@ import {store} from './store'
 const app = createApp((App))
 
 app.use(store)
+// Define no escopo global
 app.component('Cards', Cards)
 app.component('Header', Header)
 app.mount('#app')

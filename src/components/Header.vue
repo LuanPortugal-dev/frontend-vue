@@ -12,7 +12,6 @@ export default {
     }
 }
 
-
 </script>
 
 
@@ -22,7 +21,7 @@ export default {
 
         <input @input="(e) => update(e.target?.value)" class="search" placeholder="Digite o nome do produto">
 
-        <button class="buttom-search" type="submit" v-on:click="search()"></button>
+        <button class="buttom-search" type="submit" @click="search()"></button>
     </header>
 
     <div class="view-name-product">
@@ -40,8 +39,6 @@ export default {
     height: 100px;
     background-color: #F6F6F6;
 }
-
-
 .logo {
     display: flex;
     justify-content: space-between;
@@ -53,7 +50,6 @@ export default {
 
     color: black;
 }
-
 .search {
     width: 200px;
     height: 25px;
@@ -64,7 +60,6 @@ export default {
     box-sizing: border-box;
     border-color: gray;
 }
-
 .buttom-search {
     width: 32px;
     height: 25px;
@@ -82,14 +77,11 @@ export default {
     background-size: 18px 18px
 
 }
-
-
 .buttom-search:hover {
     width: 32px;
     height: 30px;
     transition: .5s;
 }
-
 .view-name-product {
     display: flex;
     justify-content: space-between;
